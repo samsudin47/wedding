@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undangan Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4 class="mb-4">
+          Kepada Bapak/Ibu/Saudara/i, <br /><br /><br />
+          <span class="bg-light mt-4 p-4 text-dark rounded-4"> Bapak/Ibu/Saudara/i, </span>
+        </h4>
+        <h1>Imam Rosadi & Fita Purna Prastikawati</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam :</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Wedding Imam & Fita</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Wedding Imam & Fita</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#acara">Info</a>
+              <a class="nav-link" href="#galeri">Gallery</a>
+              <a class="nav-link" href="#reservasi">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center mt-5">
+            <h2 class="mb-3">Acara Pernikahan</h2>
+            <h3 class="mb-4">Diselenggarakan pada hari Kamis, 27 Juni 2024 di Mejasem Dukuh Malang Kabupaten Tegal</h3>
+            <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-md-6 mb-2">
+              <img src="img/male.jpg" alt="" class="img-responsive rounded-circle object-fit-cover" />
+              <div>
+                <h3>Imam Rosadi</h3>
+                <p>
+                  Putra dari Bapak Muharjo<br />
+                  dan <br />Ibu Toinah
+                </p>
+                <p>Alamat Jl. Jatisari Rt 02/09 No. 07 Mejasem Lor Tegalandong Kecamatan Lebaksiu Kabupaten Tegal</p>
+              </div>
+            </div>
+            <div class="col-sm-0 align-items-center">
+              <h1><i class="bi bi-heart-fill text-danger shadow-lg p-3 rounded"></i></h1>
+            </div>
+            <div class="col-md-6 mt-3">
+              <img src="img/female.jpg" alt="" class="img-responsive rounded-circle object-fit-cover" />
+              <div>
+                <h3>Fita Purna Prastikawati</h3>
+                <p>
+                  Putri dari Bapak Purwanto <br />
+                  dan <br />(Almh) Ibu Mustahayiroh
+                </p>
+                <p>Jl. Sura dikrama Rt 06/11 No.14 Mejasem Dukuh malang Kabupaten Tegal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="acara" class="acara">
+      <div class="container">
+        <h2 class="judul-acara text-center text-light">Informasi Acara</h2>
+        <p class="text-center text-light mb-3x">Alamat : Jl. Sura dikrama Rt 06/11 No.14 Mejasem Dukuh malang</p>
+        <div class="text-center">
+          <iframe
+            class="rounded-4"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.0705617980448!2d109.10958657499725!3d-7.000972993000288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMDAnMDMuNSJTIDEwOcKwMDYnNDMuOCJF!5e0!3m2!1sid!2sid!4v1717251389418!5m2!1sid!2sid"
+            width="500"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-danger mb-5"><a href="https://maps.app.goo.gl/BGwcJwELvXTV3J4G9" class="text-light text-decoration-none">Klik untuk melihat maps</a></button>
+        </div>
+        <p class="text-light text-center">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba ditujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal atau salah tempat.</p>
+        <div class="text-center">
+          <div class="row align-items-center pb-5">
+            <div class="col-md mb-3">
+              <div class="card bg-transparent border-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item fw-bold h4 bg-transparent text-light">AKAD NIKAH</li>
+                  <li class="list-group-item bg-transparent text-light">
+                    <h3><i class="bi bi-clock"></i></h3>
+                    <p>08.00 - 10.00 WIB</p>
+                  </li>
+                  <li class="list-group-item bg-transparent text-light">
+                    <h3><i class="bi bi-calendar2-date"></i></h3>
+                    <p>Kamis, 27 Juni 2024</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md mb-3">
+              <div class="card bg-transparent border-light">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item fw-bold h4 bg-transparent text-light">RESEPSI</li>
+                  <li class="list-group-item bg-transparent text-light">
+                    <h3><i class="bi bi-clock"></i></h3>
+                    <p>10.00 - Selesai</p>
+                  </li>
+                  <li class="list-group-item bg-transparent text-light">
+                    <h3><i class="bi bi-calendar2-date"></i></h3>
+                    <p>Kamis, 27 Juni 2024</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- galeri -->
+    <section id="galeri" class="galeri">
+      <div class="container text-center">
+        <h2 class="judul-acara text-center text-dark mt-5">Memori Kisah kami</h2>
+        <p class="text-center mt-3 text-darkp-3">
+          Galeri foto-foto kami <br />
+          <span>
+            "Setiap langkah kita bersama, setiap tawa dan tangis yang kita bagi, telah membentuk kenangan indah yang akan senantiasa menjadi penyemangat perjalanan hidup kita. Kami berdoa semoga kasih sayang kita semakin bersemi dalam rumah
+            tangga yang baru ini"
+          </span>
+        </p>
+        <div class="">
+          <div class="row align-items-start mt-5">
+            <div class="col-md mb-2 text-end">
+              <img src="img/1.jpg" class="object-fit-cover rounded-4" alt="" data-aos="fade-up" data-aos-duration="1500" />
+            </div>
+            <div class="col-md mb-2">
+              <img src="img/2.jpg" class="object-fit-cover rounded-4" alt="" data-aos="fade-up" data-aos-duration="2000" />
+            </div>
+            <div class="col-md mb-2 text-start">
+              <img src="img/3.jpg" class="object-fit-cover rounded-4" alt="" data-aos="fade-up" data-aos-duration="3000" />
+            </div>
+          </div>
+          <div class="row align-items-start mt-2 mb-5">
+            <div class="col-md mb-2 text-end">
+              <img src="img/4.jpg" class="object-fit-cover rounded-4" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" />
+            </div>
+            <div class="col-md mb-2">
+              <img src="img/5.jpg" class="object-fit-cover rounded-4" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" />
+            </div>
+            <div class="col-md mb-2 text-start">
+              <img src="img/1.jpg" class="object-fit-cover rounded-4" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+
+    <section id="reservasi" class="reservasi">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2 class="text-light pt-5">Konfirmasi kehadiran</h2>
+            <p class="text-light">Isi form dibawah ini untuk melakukan konfirmasi kehadiran</p>
+          </div>
+        </div>
+        <form
+          id="my-form"
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center pb-5"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbyCI_IkFNbY8y0EgOGviAPwQ0bLp8U_pdpm38ctTHifkDSBA0BxElvETncmSjtnUOVHbg/exec"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label text-light">Nama</label>
+              <input type="text" id="nama" name="nama" class="form-control" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label text-light">Jumlah kehadiran</label>
+              <input type="number" id="jumlah" name="jumlah" class="form-control" min="1" max="5" length="1" value="1" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label text-light">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" style="margin-top: 17px">Kirim</button>
+          </div>
+        </form>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div class="container kirim-pesan mb-5 rounded-4">
+              <div class="head">
+                <h1 class="text-center">Kirim Pesan</h1>
+              </div>
+              <div class="comment"><span id="comment">0</span> Pesan & Kesan</div>
+              <div class="textComments"><p class="textComments">Kami senang mendengar pendapat Anda :</p></div>
+              <div class="comments"></div>
+              <div class="commentbox">
+                <img src="img/avatar.png" alt="" />
+                <div class="content">
+                  <h4 class="">Pesan ke mempelai :</h4>
+                  <div class="commentinput">
+                    <input type="text" placeholder="Masukan pesan" class="usercomment" />
+                    <div class="buttons">
+                      <button type="submit" disabled id="publish">Kirim</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts mb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center mt-5">
+            <span>Ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Bagi yang ingin mengirim angpao bisa melalui no rekening berikut,</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <h4 class="fw-bold">BCA</h4>
+                <label for="">Imam</label>
+                <input class="form-copy text-center" id="text-copy" value="6250313258" />
+                <button class="btn btn-danger btn-circle" onclick="copyText()"><span class="fa fa-copy"></span> Salin</button>
+              </li>
+              <li class="list-group-item">
+                <h4 class="fw-bold">BCA</h4>
+                <label for="">Fita </label>
+                <input class="form-copy text-center" id="text-copy2" value="2480198096" />
+                <button class="btn btn-danger btn-circle" onclick="copyText2()"><span class="fa fa-copy"></span> Salin</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <p class="mt-4">Atas kehadirannya kami ucapkan,</p>
+            <h4>Terima kasih</h4>
+            <p>Hormat kami :</p>
+            <p class="sacra">Imam & Fita</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contianer">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2024 Imam dan Fita Wedding. All Rights Reserved </small>
+            <small class="block">Design by <a href="https://instagram.com/_mohamadsamsudin21">@_sammaWedding</a></small>
+            <ul class="mt-4">
+              <li>
+                <a href=""><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-tiktok"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- pemutar musik -->
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/loves-serenade-188266.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc-fill"></i>
+      </div>
+    </div>
+    <!-- end musik -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 6, // required
+        day: 27, // required
+        hours: 7, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <script>
+      const roolElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+        roolElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        roolElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem("opened", "true");
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.5;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying === true) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-play-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-play-circle");
+        }
+        isPlaying = !isPlaying;
+      };
+
+      // if (!localStorage.getItem("opened")) {
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi kehadiran berhasil terkirim!");
+          });
+        });
+      });
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("n") || "";
+      const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+
+      document.querySelector("#nama").value = nama;
+    </script>
+
+    <script>
+      const USERID = {
+        name: null,
+        identity: null,
+        image: null,
+        message: null,
+        date: null,
+      };
+
+      const userComment = document.querySelector(".usercomment");
+      const publishBtn = document.querySelector("#publish");
+      const comments = document.querySelector(".comments");
+      const userName = document.querySelector(".user");
+      const notify = document.querySelector(".notifyinput");
+
+      userComment.addEventListener("input", (e) => {
+        if (!userComment.value) {
+          publishBtn.setAttribute("disabled", "disabled");
+          publishBtn.classList.remove("abled");
+        } else {
+          publishBtn.removeAttribute("disabled");
+          publishBtn.classList.add("abled");
+        }
+      });
+
+      function addPost() {
+        if (!userComment.value) return;
+        USERID.name = userName.value;
+        if (USERID.name === "Anonymous") {
+          USERID.identity = false;
+          USERID.image = "anonymous.png";
+        } else {
+          USERID.identity = true;
+          USERID.image = "user.png";
+        }
+
+        USERID.message = userComment.value;
+        USERID.date = new Date().toLocaleString();
+        let published = `<div class="parents">
+            <img src="${USERID.image}">
+            <div>
+                <h1>${USERID.name}</h1>
+                <p>${USERID.message}</p>
+                <span class="date">${USERID.date}</span>
+            </div>    
+        </div>`;
+
+        comments.innerHTML += published;
+        userComment.value = "";
+        publishBtn.classList.remove("abled");
+
+        let commentsNum = document.querySelectorAll(".parents").length;
+        document.getElementById("comment").textContent = commentsNum;
+      }
+
+      publishBtn.addEventListener("click", addPost);
+    </script>
+    <script>
+      function copyText() {
+        var copyText = document.getElementById("text-copy");
+        copyText.select();
+        document.execCommand("copy");
+      }
+    </script>
+    <script>
+      function copyText2() {
+        var copyText2 = document.getElementById("text-copy2");
+        copyText2.select();
+        document.execCommand("copy");
+      }
+    </script>
+  </body>
+</html>
