@@ -11,7 +11,7 @@ body {
   font-size: 1.2 rem;
   font-family: "Work Sans", sans-serif;
   min-height: 4000px;
-  overflow-x: hidden;
+  background-attachment: fixed;
 }
 
 .hero::before {
@@ -79,23 +79,41 @@ body {
 .mynavbar .nav-link {
   text-transform: uppercase;
   font-family: "Klee One", cursive;
-  font-weight: bold;
 }
 
 .home {
-  /* content: "";
-  position: absolute; */
   background-image: url(img/home.jpg);
   background-size: cover;
-  background-position: center;
   margin-top: -4rem;
-  padding: 12rem;
+  padding: 2rem;
   padding-bottom: 5rem;
-  /* top: 0;
-  left: 0;
+  min-height: 100vh;
+}
+
+.homeBlur {
   width: 100%;
-  height: 100%; */
+  height: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  background: inherit;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.homeBlur::before {
+  content: "";
+  position: absolute;
+  background: inherit;
   z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(10px);
+  margin: -20;
 }
 
 /* .home {
@@ -103,7 +121,6 @@ body {
   min-height: 100vh;
 } */
 
-.home h2,
 .acara h2,
 .galeri h2,
 .reservasi h2,
@@ -112,6 +129,14 @@ body {
   font-family: "Klee One", cursive;
   font-size: 3rem;
   font-weight: bold;
+}
+
+.home h2 {
+  color: var(--pink);
+  font-family: "Klee One", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .home h3 {
@@ -212,7 +237,7 @@ footer li {
 
 .sacra {
   font-family: "Sacramento", cursive;
-  font-weight: 400;
+
   font-size: 70px;
 }
 
@@ -378,8 +403,10 @@ footer li {
 
 /* tablet*/
 @media (max-width: 768px) {
-  html {
+  html,
+  body {
     font-size: 65%;
+    overflow-x: hidden;
   }
   .mynavbar .nav-link {
     text-transform: uppercase;
@@ -389,11 +416,20 @@ footer li {
 }
 /* hp */
 @media (max-width: 576px) {
-  html {
+  html,
+  body {
     font-size: 62%;
+    overflow-x: hidden;
   }
   .simply-countdown > .simply-section {
     padding: 45px;
     margin: 3px;
+  }
+}
+
+@media (max-width: 375px) {
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
