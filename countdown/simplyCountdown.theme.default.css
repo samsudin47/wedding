@@ -25,6 +25,22 @@
 .simply-countdown > .simply-section .simply-amount {
   font-size: 1.2rem;
 }
+@media (max-width: 402px) {
+  .simply-countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 392px) {
+  .simply-countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 390px) {
   .simply-countdown {
     display: flex;
