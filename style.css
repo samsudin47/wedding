@@ -146,13 +146,22 @@ body {
 }
 
 .home p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #666;
 }
 
 img {
   height: 200px;
   width: 200px;
+}
+
+.acara p,
+.galeri p,
+.reservasi p,
+.gifts p,
+.imam,
+.block {
+  font-size: 1.2rem;
 }
 
 .acara {
@@ -164,8 +173,13 @@ iframe {
   width: 100%;
 }
 
-.galeri {
-  background-image: url(img/home.jpg);
+.galeri,
+.gifts {
+  background-image: url(img/bg-galeri.jpg);
+  background-size: cover;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
 }
 
 .reservasi {
@@ -237,8 +251,7 @@ footer li {
 
 .sacra {
   font-family: "Sacramento", cursive;
-
-  font-size: 70px;
+  font-size: 5rem;
 }
 
 /* comments */
